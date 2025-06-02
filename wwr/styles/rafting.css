@@ -8,7 +8,7 @@
     --primary-color: #134074;
     --secondary-color: #ECA72C;
     --accent1-color: #8DA9C4;
-    --accent2-color: #EEF4ED;
+    --accent2-color: black;
     --heading-font: "Bebas Neue";
     --body-font: "Roboto";
 }
@@ -33,8 +33,7 @@ footer {
     margin: 0;
 }
 
-h1,
-h2 {
+h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
@@ -75,6 +74,7 @@ main {
 
 section {
     grid-column: 1 / 6;
+    color: var(--accent2-color);
 }
 
 .hero1 {
@@ -134,7 +134,7 @@ h1 {
     text-align: center;
     opacity: 0, 7;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--primary-color);
 }
 
 article {
@@ -156,6 +156,7 @@ footer {
     display: flex;
     justify-content: flex-end;
     position: relative;
+    color: var(--accent2-color);
 }
 
 footer p {
