@@ -33,7 +33,8 @@ footer {
     margin: 0;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
@@ -164,4 +165,3 @@ footer p {
     left: 40%;
     align-self: center;
 }
-
