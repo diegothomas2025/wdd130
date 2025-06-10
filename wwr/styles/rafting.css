@@ -149,6 +149,10 @@ section {
 
 /* CONTACT HTML MAIN CSS */
 
+iframe {
+  border: 0;
+}
+
  .company-information {
     display: grid;
     grid-template-columns: 1fr 1fr;
