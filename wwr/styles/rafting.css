@@ -13,6 +13,7 @@
     --body-font: "Roboto";
 }
 
+/* fonts and colors */
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
@@ -23,12 +24,13 @@ header {
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: rgb(228, 227, 227);
 }
 
 header,
 main,
 footer {
-    width: auto;
+    width: 100%;
     /* it was 840px */
     margin: 0;
 }
@@ -68,7 +70,9 @@ header img {
     border-radius: 100px;
 }
 
-main {
+/* MAIN ABOUT HTML */
+
+.about-page {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
@@ -78,9 +82,22 @@ section {
     color: var(--accent2-color);
 }
 
+.about-page h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0, 7;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+
 .hero1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    height: 15rem;
+    width: auto;
 }
 
 .hero1 h2 {
@@ -104,16 +121,10 @@ section {
     text-align: center;
 }
 
-
-
 .hero2 img {
     width: 200px;
     height: auto;
     object-fit: cover;
-}
-
-.socialmedia a {
-    text-decoration: none;
 }
 
 .hero {
@@ -127,23 +138,6 @@ section {
     height: auto;
 }
 
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0, 7;
-    background-color: var(--accent1-color);
-    color: var(--primary-color);
-}
-
-article {
-    position: absolute;
-    background-color: var(--secondary-color);
-    color: var(--accent2-color);
-    bottom: 0;
-}
 
 .hero article img {
     float: right;
@@ -153,15 +147,139 @@ article {
     box-shadow: 0 0 15px white;
 }
 
+/* CONTACT HTML MAIN CSS */
+
+ .company-information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color:  #eee;
+ }
+
+ .contact-us h1 {
+    grid-area: 1 / 1 / 2 / 6;
+    margin: 10px auto;
+    font-size: 3rem;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0, 7;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+
+.information h2 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.information p {
+    grid-area: 1 / 1 / 2 / 2;
+    padding: 40px 40px 0 0;
+    color: black;
+    font-style: italic;
+}
+
+ iframe {
+    grid-area: 1 / 2 / 2 / 3;
+ }
+
+article {
+    position: absolute;
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    bottom: 0;
+}
+
+/* EMPLOYEE IMAGES CSS */
+.employees {
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem auto;
+}
+
+.employees img{
+    width: 200px;
+    border: 2px solid black;
+}
+
+figcaption {
+    color: black;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    background-color: #eee;
+    display: grid;
+}
+
+.contact-info {
+    color: black;
+    display: grid;
+}
+
+.contact-info p {
+    margin: 20px 0 10px 8px;
+}
+
+.contact-info input {
+    width: 80%;
+    height: auto;
+}
+
+label {
+    color: black;
+    padding: 1rem;
+}
+
+input {
+    width: 3rem;
+    padding: 5px;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 200px;
+    min-height: 100px;
+    padding: 5px;
+}
+
+input[type="checkbox"] {
+    width: 3rem;
+    height: 1rem;
+}
+
+button {
+    width: 200px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: .5rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+/* FOOTER CSS */
+
 footer {
     display: flex;
-    justify-content: flex-end;
-    position: relative;
-    color: var(--accent2-color);
+    justify-content: space-between;
+    color: black;
+}
+
+.socialmedia img{
+    width: 30px;
+    height: auto;
 }
 
 footer p {
-    position: absolute;
-    left: 40%;
-    align-self: center;
+    display: flex;
+    justify-content: center;
 }
